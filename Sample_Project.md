@@ -85,7 +85,7 @@ It will correct the following problems:
 
 ### Other Ideas of Improvement
 Other problems, which could modify our data analysis, will not be dealt with in that project:
-- The postal codes and city names completeness. Indeed, during the audit, it has been observed some missing data. 
+- The postal codes and city names completeness. Indeed, during the audit, it has been observed some missing data. This update will have to go through the street name and to identify them against the street names available in official databases coming from INSEE (Instit National de la Statistique et des Etudes Economiques) such as SIRENE or BAN for instance or coming from other map datasets. In addition, if those data are not specific to Reims, this task might become more difficult due to the reason that many street names are quite common and may exist for different cities.  
 - The validity of all the tags in accordance with https://wiki.openstreetmap.org/wiki/Map_Features  
 Other data will not be cleaned as they are not analyzed. For instance phone numbers.
 
@@ -244,4 +244,4 @@ However, the data can always be improved. The following ideas could be put in pl
 - Make the OSM community more active in Reims. Maybe we could contact the top contributors to see what could be done.  
 - Like Udacity, Reims university could propose a course on OpenStreetMap inviting students to work on an OSM project asking them to improve the data
 - Like other cities, Reims Métropole could make data on Reims available to everyone. This will be a win-win opportunity: OSM contributors could incporate these data into OSM and Reims would be able to use them for its statistics.
-- Using INSEE (Instit National de la Statistique et des Etudes Economiques) data to verify the OSM data against the SIRENE database or the BAN database (recently used by OSM map community). These data are available here: https://www.data.gouv.fr/fr/territories/commune/51454@1970-12-30/Reims/
+- Using INSEE data to verify the OSM data against the SIRENE database or the BAN database (recently used by OSM map community). These data are available here: https://www.data.gouv.fr/fr/territories/commune/51454@1970-12-30/Reims/
