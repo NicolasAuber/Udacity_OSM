@@ -1,5 +1,5 @@
 # Project - OSM Reims Data Analysis
-Author: Nicolas Auber
+Author: Nicolas Auber  
 Date: 24 November 2020
 
 ## Table of Contents
@@ -10,13 +10,12 @@ Date: 24 November 2020
 - Conclusion
 
 ## Introduction
-This project is part of Data Analyst Nanodegree Progam. It will deal with the analysis of OpenStreetMap data focusing on Reims city in France. The reason is simple: Reims is my hometown and I am still curious about this city.
-Reims, France
-(https://www.openstreetmap.org/relation/36458)
+This project is part of Data Analyst Nanodegree Progam. It will deal with the analysis of OpenStreetMap data focusing on Reims city in France. The reason is simple: Reims is my hometown and I am still curious about this city.  
+Reims, France  
+https://www.openstreetmap.org/relation/36458
 
 ## Input Files
-The full map of Reims area is downloaded on [OpenStreetMap](https://www.openstreetmap.org)
-A sample is extracted from the full map to run the Python script against it.
+The full map of Reims area is downloaded on [OpenStreetMap](https://www.openstreetmap.org). A sample is extracted from the full map to run the Python script against it.  
 The size of both OSM files is given below.
 ```
 Size of the OSM files:
@@ -58,21 +57,19 @@ sorted_dict = [(k, v) for (v, k) in sorted([(value, key) for (key, value) in pos
 pprint.pprint(sorted_dict)
 ```
 
-```python 
-Number of occurrences: 2971
-Number of occurrences per postcode:
-[('51100', 1954),
- ('51430', 434),
- ('51370', 302),
- ('51450', 188),
- ('51350', 78),
- ('51109', 7),
- ('51688', 3),
- ('51092', 2),
- ('51721', 1),
- ('51687', 1),
- ('51 100', 1)]
-```
+Number of occurrences: 2971  
+Number of occurrences per postcode:  
+51100, 1954  
+51430, 434  
+51370, 302  
+51450, 188  
+51350, 78  
+51109, 7  
+51688, 3  
+51092, 2  
+51721, 1  
+51687, 1  
+51 100, 1  
 
 ### Data Problems
 After the data audit, the dataset will be cleaned regarding:
@@ -82,13 +79,14 @@ After the data audit, the dataset will be cleaned regarding:
 
 It will correct the following problems:
 - Postal code validity i.e. with the expected 5 digits pattern
-- Postal code accuracy i.e. meets the official postal code for cities (verified against (https://www.laposte.fr/particulier/outils/trouver-un-code-postal))
+- Postal code accuracy i.e. meets the official postal code for cities (verified against https://www.laposte.fr/particulier/outils/trouver-un-code-postal)
 - City name validity/accuracy i.e. with the expected official city name
 - City name uniformity i.e. with the right text format
 
+### Other Ideas of Improvement
 Other problems, which could modify our data analysis, will not be dealt with in that project:
 - The postal codes and city names completeness. Indeed, during the audit, it has been observed some missing data. 
-- The validity of all the tags in accordance with (https://wiki.openstreetmap.org/wiki/Map_Features)
+- The validity of all the tags in accordance with https://wiki.openstreetmap.org/wiki/Map_Features  
 Other data will not be cleaned as they are not analyzed. For instance phone numbers.
 
 ### Data Cleaning
@@ -143,7 +141,7 @@ drop_df_rows('ways_tags.csv')
 ```
 
 ## Data Analysis
-First, a SQL databse named Reims.db is created. The following queries will be done on that database.
+First, a SQL databse named Reims.db is created. Many queries are made within the full analysis (refer to Jupyter Notebook file). A few queries on that database are detailed below.
 
 ### Number of Nodes and Ways
 ```sql
@@ -155,9 +153,8 @@ c.execute('SELECT COUNT(*) FROM ways')
 results = c.fetchall()
 print('Number of ways in the database:',results[0][0])
 ```
-Number of nodes in the database: 521617
+Number of nodes in the database: 521617  
 Number of ways in the database: 93338
-
 
 ### Top 10 contributors
 ```sql
@@ -173,17 +170,17 @@ results = c.fetchall()
 print("Top 10 contributors:")
 pprint.pprint(results)
 ```
-Top 10 contributors:
-[('MXS', 181226),
- ('MM51', 120721),
- ('Ours51', 87495),
- ('Denis_Helfer', 66151),
- ('Reims Moderne', 46160),
- ('botdidier2020', 26082),
- ('Super-Map', 14509),
- ('AmiFritz', 10762),
- ('Hugo-D', 8343),
- ('meihou', 4703)]
+Top 10 contributors (edited):  
+MXS, 181226  
+MM51, 120721  
+Ours51, 87495  
+Denis_Helfer, 66151  
+Reims Moderne, 46160  
+botdidier2020, 26082  
+Super-Map, 14509  
+AmiFritz, 10762  
+Hugo-D, 8343  
+meihou, 4703  
 
 ### Top 10 types of cuisine in restaurants
 ```sql
@@ -200,17 +197,17 @@ results = c.fetchall()
 print("Top 10 types of cuisine:")
 pprint.pprint(results)
 ```
-Top 10 types of cuisine:
-[('french', 22),
- ('burger', 17),
- ('pizza', 14),
- ('italian', 9),
- ('brasserie', 6),
- ('asian', 5),
- ('chinese', 5),
- ('kebab', 4),
- ('mexican', 4),
- ('japanese', 3)]
+Top 10 types of cuisine (edited):  
+french, 22  
+burger, 17  
+pizza, 14  
+italian, 9  
+brasserie, 6  
+asian, 5  
+chinese, 5  
+kebab, 4  
+mexican, 4  
+japanese, 3  
 
 ### Top of the brands of fast food chains
 ```sql
@@ -228,23 +225,23 @@ results = c.fetchall()
 print("Top brands of fast food restaurants:")
 pprint.pprint(results)
 ```
-Top brands of fast food restaurants:
-[("McDonald's", 6),
- ('Burger King', 2),
- ('Quick', 2),
- ('231 East Street', 1),
- ('Bagelstein', 1),
- ("Domino's", 1),
- ("Domino's Pizza", 1),
- ('KFC', 1),
- ("O'Tacos", 1),
- ('Pita Pit', 1),
- ('Subway', 1)]
+Top brands of fast food restaurants (edited):  
+McDonald's, 6  
+Burger King, 2  
+Quick, 2  
+231 East Street, 1  
+Bagelstein, 1  
+Domino's, 1  
+Domino's Pizza, 1  
+KFC, 1  
+O'Tacos, 1  
+Pita Pit, 1  
+Subway, 1  
 
 ## Conclusion
-After this review, we can conclude that the OpenStreetMap data is quite complete and cleaned for Reims city. I was curious about Reims city and I found out a few interesting results.
+After this review, we can conclude that the OpenStreetMap data is quite complete and cleaned for Reims city. I was curious about Reims city and I found out a few interesting results.  
 However, the data can always be improved. The following ideas could be put in place:
 - Make the OSM community more active in Reims. Maybe we could contact the top contributors to see what could be done.  
 - Like Udacity, Reims university could propose a course on OpenStreetMap inviting students to work on an OSM project asking them to improve the data
-- Like other cities, Reims Métropole could make data on Reims available to everyone. This will be a win-win opportunity: OSM contributors could incporate these data into OSM and Reims would be able to use them for its statistics.
+- Like other cities, Reims MÃ©tropole could make data on Reims available to everyone. This will be a win-win opportunity: OSM contributors could incporate these data into OSM and Reims would be able to use them for its statistics.
 - Using INSEE (Instit National de la Statistique et des Etudes Economiques) data to verify the OSM data against the SIRENE database or the BAN database (recently used by OSM map community). These data are available here: (https://www.data.gouv.fr/fr/territories/commune/51454@1970-12-30/Reims/)
