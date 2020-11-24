@@ -1,0 +1,8 @@
+Several links are shown below. This is also explained thoroughly in the Jupyter Notebook.
+
+I have chosen Reims (France) as this is my hometown. Now I live in Toulouse.
+I was a bit curious about Reims and my parents still live there.
+
+https://www.openstreetmap.org/relation/36458 > Link to Reims city in OpenStreetMap
+http://overpass-api.de/query_form.html > Link to export the OSM file through a query
+Query used to download the complete OSM file (named Reims.osm): (node(49.2187,3.9486,49.2892,4.0807);<;);out meta; 

@@ -1,0 +1,15 @@
+Help for coding
+https://www.w3schools.com/sql/default.asp -> To get help on SQL
+https://stackoverflow.com/ -> To get various help on Python, SQL, Parsing... with a quick search in Google
+https://gist.github.com/carlward/54ec1c91b62a5f911c42#file-sample_project-md -> To know how join nodes_tags and ways_tags
+https://www.codeproject.com/Articles/33052/Visual-Representation-of-SQL-Joins -> SQL join methods
+Python documentation for re, pandas and matplotlib.pyplot modules
+
+GitHub Repositories
+https://hadrien-lcrx.github.io/notebooks/Boston_Data_Wrangling.html
+https://github.com/GloSanc/Wrangle_OSM
+
+Miscellaneous
+https://towardsdatascience.com/loading-data-from-openstreetmap-with-python-and-the-overpass-api-513882a27fd0
+-> Not really used. But interesting article that shows how data analysis is powerful
+
