@@ -244,4 +244,4 @@ However, the data can always be improved. The following ideas could be put in pl
 - Make the OSM community more active in Reims. Maybe we could contact the top contributors to see what could be done.  
 - Like Udacity, Reims university could propose a course on OpenStreetMap inviting students to work on an OSM project asking them to improve the data
 - Like other cities, Reims Métropole could make data on Reims available to everyone. This will be a win-win opportunity: OSM contributors could incporate these data into OSM and Reims would be able to use them for its statistics.
-- Using INSEE (Instit National de la Statistique et des Etudes Economiques) data to verify the OSM data against the SIRENE database or the BAN database (recently used by OSM map community). These data are available here: (https://www.data.gouv.fr/fr/territories/commune/51454@1970-12-30/Reims/)
+- Using INSEE (Instit National de la Statistique et des Etudes Economiques) data to verify the OSM data against the SIRENE database or the BAN database (recently used by OSM map community). These data are available here: https://www.data.gouv.fr/fr/territories/commune/51454@1970-12-30/Reims/
